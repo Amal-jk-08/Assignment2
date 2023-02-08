@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PROG8170Assignment2
 {
-    public internal class Circle
+    public class Circle
     {
         int radius;
         public Circle()
@@ -19,7 +19,7 @@ namespace PROG8170Assignment2
         }
         public int GetRadius()
         {
-            Console.WriteLine("Radius of the circle is"+radius);
+            return(radius);
         }
         public void SetRadius(int radius1)
         {
@@ -27,11 +27,11 @@ namespace PROG8170Assignment2
         }
         public double GetCircumference()
         {
-            Console.WriteLine("Circumference of the circle is"+(2*3.14*radius));
+            return(2 * 3.14 * radius);
         }
         public double GetArea()
         {
-            Console.WriteLine("Area of the circle is"+(3.14*radius*radius));
+            return(3.14 * radius * radius);
         }
     }
 }
